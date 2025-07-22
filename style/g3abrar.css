@@ -8,9 +8,13 @@
   font-weight:400;
   font-style: normal;
 }
+
 /* shared style */
 .display-flex{
     display: flex;
+}
+.text-prime{
+    color: ;
 }
 .text-gray{
     color:#424242;
@@ -35,6 +39,14 @@ main{
     max-width: 1440px;
     margin: 0 auto;
 }
+main > section{
+    margin-top:130px ;
+}
+.feature-title{
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
 
 /* header style */
 
@@ -73,11 +85,182 @@ main{
 }
 .banner-img{
     width: 100%;
+    display: block;
+}
+/* nijer idea banner img murgin */
+.banner{
+    margin-left: 240px;
+    margin-right: 240px;
+}
+/* team-and-feature style */
+.team-and-feature{
+    align-items: center;
+    /* margin-left: 240px;
+    margin-right: 240px; */
+}
+.team{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.feature{
+    margin-left: 130px;
+    max-width: 530px;
+}
+#ofour{
+    color:#131313;
+}
+#featuret{
+    color:  rgba(255, 144, 14, 1);
+}
+
+#quicklist{
+    font-weight: 500;
+}
+.feature-discription{
+    color:#727272;
+
+}
+/* sundhari and column card */
+#one-side-border{
+    border-left:5px solid #FF900E;
+    padding: 20px;
+}
+.enjoy-card .enjoy-card-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 0;
+    margin-top: 0;
+   
+}
+.enjoy-card{
+     padding: 30px;
+     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.179);
+     margin-bottom: 20px;
+     border-radius: 8px;
+
+}
+.enjoy{
+    gap: 140px;
+    align-items: center;
+    /* justify-items: center;
+    justify-content: center; */
+}
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#ten-years{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.sundhari-img img{
+     width: 100%;
+}
+/* some facts section */
+.some-facts{
+   margin: 0 290px;
+}
+.some-facts-card-parent{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+
+}
+.facts{
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    text-align: center;
+}
+.fact-number{
+    font-weight: 600;
+    font-size:2.8rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.fact-name{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #727272;
+    margin-top: 10px;
+}
+#facts-discrption{
+    max-width: 540px;
+   
+}
+/* sponssor */
+.Our-Sponspors{
+    max-width: 1440px;
+    margin: 0 240px;
+}
+.sponsor-info{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+.sponsor-companie{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.sponsor-companie img{
+    filter: grayscale(100%);
+}
+footer{
+    background-color: #f3ab8f83;
+    margin:130px 240px 116px 240px;
+    max-width: 1440px;
+    height: 100px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     border-radius: 8px;
+}
+.footerp{
+    max-width:620px;
+    height:20px;
+   
 }
 /* responsive media query */
 @media screen and (max-width:576px){
-    .navbar,.nav-links{
+    .navbar,.nav-links,.team-and-feature,.enjoy{
         flex-direction: column;
     }
-    
+    .team,
+    .some-facts-card-parent,
+    .sponsor-companie
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .feature{
+        margin-left: 20px;
+    }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .some-facts-card-parent,.sponsor-companie{
+        justify-items: center;
+        gap: 24px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:992px){
+    .team-and-feature,.enjoy{
+        flex-direction: column;
+    }
+    .feature{
+        margin: 50px auto;
+    }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
