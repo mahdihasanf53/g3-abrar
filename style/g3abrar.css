@@ -13,9 +13,6 @@
 .display-flex{
     display: flex;
 }
-.text-prime{
-    color: ;
-}
 .text-gray{
     color:#424242;
 }
@@ -88,10 +85,10 @@ main > section{
     display: block;
 }
 /* nijer idea banner img murgin */
-.banner{
+/* .banner{
     margin-left: 240px;
     margin-right: 240px;
-}
+} */
 /* team-and-feature style */
 .team-and-feature{
     align-items: center;
@@ -162,7 +159,7 @@ main > section{
 }
 /* some facts section */
 .some-facts{
-   margin: 0 290px;
+   
 }
 .some-facts-card-parent{
     display: grid;
@@ -199,7 +196,7 @@ main > section{
 /* sponssor */
 .Our-Sponspors{
     max-width: 1440px;
-    margin: 0 240px;
+    margin: 0 auto;
 }
 .sponsor-info{
     max-width: 540px;
@@ -209,20 +206,23 @@ main > section{
 .sponsor-companie{
     display: grid;
     grid-template-columns: repeat(5,1fr);
+   
 }
 .sponsor-companie img{
     filter: grayscale(100%);
 }
+/* footer */
 footer{
     background-color: #f3ab8f83;
-    margin:130px 240px 116px 240px;
+    /* margin:130px 240px 116px 240px; */
     max-width: 1440px;
     height: 100px;
     /* text-align: center; */
     display: flex;
     justify-content: center;
     align-items: center;
-     border-radius: 8px;
+    border-radius: 8px;
+    margin: 0 auto;
 }
 .footerp{
     max-width:620px;
